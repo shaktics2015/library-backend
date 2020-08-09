@@ -123,7 +123,7 @@ public class BorrowHistoryController {
  
 		if(borrowHistory!= null && borrowHistory.getBooks().contains(book)) {
  			return new ResponseEntity(
-					new CustomErrorType("Book is already in the borrowed list, Unable to add book ID: " + borrowHistoryDTO.getBookId() + " to your Borrow list"),
+					new CustomErrorType("Book is already in the borrowed list, Choose a different one."),
 					HttpStatus.CONFLICT);
 		}
 		

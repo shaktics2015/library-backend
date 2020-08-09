@@ -33,7 +33,7 @@ public class BookController {
 	@Autowired
 	private IBookService service;
 	
-	@Operation(summary = "Get all Books with atleast one copy")
+	@Operation(summary = "Get all Books with  >=1 copies")
 	@GetMapping("/all")
 	public ResponseEntity<List<Book>> getBooks() {
 		List<Book> books = service.findAll();

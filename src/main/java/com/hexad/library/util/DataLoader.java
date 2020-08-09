@@ -22,7 +22,7 @@ public class DataLoader implements ApplicationRunner {
 	}
 
 	private void insertBooks() { 
-		List<Book> books = Arrays.asList(new Book("BN1", "BAN1", 1), new Book("BN2", "BAN2", 2), new Book("BN3", "BAN3", 3), new Book("BN4", "BAN4", 4));
+		List<Book> books = Arrays.asList(new Book("Patterns of Software", "Richard P. Gabriel", 1), new Book("The Java Programming Language", "James Gosling", 1));
 		bookService.saveAll(books);
 	}
 
