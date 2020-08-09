@@ -4,6 +4,10 @@
 
     mvn spring-boot:run
 
+## To run App with TestCases
+
+    mvn -P runWithTest    
+
 
 ### Swagger URL
 
